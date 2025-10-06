@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>College Event Ticket</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket {
+  background: rgb(70, 1, 1);
+  border: 2px dashed #333;
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: beige;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ticket-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event-info, .event-details {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.ticket-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .ticket {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .ticket-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-info, .event-details {
+    width: 100%;
+  }
+
+  .logo {
+    width: 80px;
+  
+  }
+
+  .ticket-footer {
+    font-size: 0.8rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="ticket">
+    <div class="ticket-header">
+      <img src="images/svitlogo.png" alt="College Logo" class="logo" style="width: 140px;" />
+     <h1>Pravara Rural Education Societys</h1>
+     <h2>Sir Visvesvaraya Institute Of Technology, Chincholi, Nashik</h2>
+     <h2>Annual Tech Fest 2025</h2>
+    </div>
+    
+    <div class="ticket-body">
+      <div class="event-info">
+        <p><strong>Name:</strong> shruti tungar</p>
+        <p><strong>ID:</strong> 3708604</p>
+        <p><strong>Branch:</strong> Computer Science</p>
+      </div>
+
+      <div class="event-details">
+        <p><strong>Date:</strong> Oct 15, 2025</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Venue:</strong> College seminar hall</p>
+      </div>
+    </div>
+
+    <div class="ticket-footer">
+      <p>Ticket ID: 348</p>
+    </div>
+  </div>
+</body>
+</html>
