@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket {
+  background: rgb(70, 1, 1);
+  border: 2px dashed #333;
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: beige;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ticket-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event-info, .event-details {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.ticket-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .ticket {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .ticket-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-info, .event-details {
+    width: 100%;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .ticket-footer {
+    font-size: 0.8rem;
+  }
+}
